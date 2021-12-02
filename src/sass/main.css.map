@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU;AEGV,AAAA,IAAI,CAAC;EACH,gBAAgB,EDHI,OAAO;ECI3B,KAAK,EDIc,OAAO;ECH1B,WAAW,EANE,EAAE,CAAC,IAAI,EAAE,UAAU;EAOhC,UAAU,EAAE,MAAM;CACnB;;AACD,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC;AACD,EAAE,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AACD,AAAA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;CACjB;;AACD,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AACD,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,MAAM;EACf,2BAA2B;EAC3B,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,KAAK;CASjB;;AAPC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,OAAO,SAAS,EAAE,MAAM;EAN7D,AAAA,UAAU,CAAC;IAOP,SAAS,EAAE,KAAK;GAMnB;;;AAHC,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAVtC,AAAA,UAAU,CAAC;IAWP,SAAS,EAAE,MAAM;GAEpB;;;AACD,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;EAIZ;;;KAGG;CACJ;;AACD,AAAA,gBAAgB,CAAC;EACf,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,CAAC;EACR,MAAM,EAAE,CAAC;CACV;;AFhDD,gBAAgB;AAEhB,YAAY;AQLZ,AAAA,QAAQ,CAAA;EACJ,gBAAgB,EAFI,OAAO;CAG9B",
+    "sources": [
+        "main.scss",
+        "base/_colors.scss",
+        "base/_common.scss",
+        "layout/_header_hero.scss",
+        "layout/_products.scss",
+        "layout/_about.scss",
+        "layout/_advantages.scss",
+        "layout/_gallery.scss",
+        "layout/_customer_reviews.scss",
+        "layout/_contacts.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -1,0 +1,65 @@
+/* BASE */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: DM Sans, sans-serif;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 15px;
+  /*outline: 1px solid red;*/
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1050px;
+  }
+}
+
+.section {
+  width: 100vw;
+  /*@media screen and (min-width: 1600px) {
+    //padding-top: 127px;
+    //padding-bottom: 110px;
+  }*/
+}
+
+.visually-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* COMPONENTS */
+/* LAYOUT */
+.reviews {
+  background-color: #FAFAFA;
+}
+/*# sourceMappingURL=main.css.map */
