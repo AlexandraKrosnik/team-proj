@@ -1,7 +1,10 @@
+$primary-font: DM Sans, sans-serif;
+$secondary-font: Titan One, cursive;
+
 body {
-  //background-color: var(--primary-white-color);
-  //color: var(--primary-text-color);
-  // font-family: $primary-font;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $primary-font;
   font-style: normal;
 }
 h1,
@@ -23,14 +26,14 @@ a {
   padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 280px;
 
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
-    max-width: 738px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 700px;
   }
 
-  @media screen and (min-width: 1600px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1050px;
   }
 }
 .section {
