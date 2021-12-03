@@ -12,11 +12,10 @@ $background-gray-color: #fafafa;
     position: absolute;
     top: 28px;
     left: 61px;
-    content: '';
+    content: ' ';
     width: 54px;
     height: 40px;
     background: url(//src/images/icons/quotes.svg);
-    
   }
 }
 .reviews__text {
@@ -24,4 +23,14 @@ $background-gray-color: #fafafa;
   font-weight: 500;
   font-size: 12px;
   line-height: 255%;
+}
+.reviews__person {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+
+  &::before {
+    content: '. . .';
+  }
 }
