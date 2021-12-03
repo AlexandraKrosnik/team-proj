@@ -1,5 +1,27 @@
-$background-gray-color: #FAFAFA;
+$background-gray-color: #fafafa;
 
-.reviews{
-    background-color: $background-gray-color;
+.reviews {
+  position: relative;
+  background-color: $background-gray-color;
+  width: 280px;
+  height: 308px;
+  padding: 43px 66px 26px 57px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background: url(//src/images/icons/quotes.svg);
+    
+  }
+}
+.reviews__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
 }
