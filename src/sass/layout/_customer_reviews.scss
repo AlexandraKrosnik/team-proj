@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 86px;
+  padding-bottom: 128px;
 }
 .reviews__comment {
   position: relative;
@@ -13,15 +13,17 @@
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 29px;
+  z-index: 1;
 
   &::before {
     position: absolute;
     top: 28px;
     left: 61px;
-    content: ' ';
+    content: '';
     width: 54px;
     height: 40px;
-    background: url(//src/images/icons/quotes.svg);
+    background-image: url('../images/icons/quotes.svg');
+    z-index: -1;
   }
 }
 .reviews__text {
@@ -46,12 +48,49 @@
   text-align: center;
 }
 .reviews__points {
+  margin: 0 auto;
+  position: relative;
   display: block;
-  border-color: $button-hover-color-red;
-  border-radius: 4px;
+  background-color: $button-hover-color-red;
+  border-radius: 2px;
+  padding: 2px;
   font-size: 0;
+  margin-bottom: 18px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $button-hover-color-red;
+    border-radius: 2px;
+    font-size: 0;
+    padding: 2px;
+    top: 0;
+    left: -14px;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $button-hover-color-red;
+    border-radius: 2px;
+    font-size: 0;
+    padding: 2px;
+    top: 0;
+    left: 14px;
+  }
 }
-.swiper {
-  width: 100%;
-  height: 100%;
+// ----------SWIPER-----------
+
+.swiper .swiper-pagination {
+  bottom: 86px;
+}
+.swiper-pagination{
+  display: block;
+  margin-top: 30px;
+}
+.swiper-pagination-bullet {
+  background-color: $button-hover-color-red;
+  width: 12px;
+  height: 12px;
 }
