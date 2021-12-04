@@ -7,13 +7,14 @@
 .reviews__comment {
   position: relative;
   background-color: $background-gray-color;
-  max-width: 280px;
+  width: 100%;
+  padding-top: 43px;
   height: 308px;
-  padding: 43px 66px 26px 57px;
   margin: 0 auto;
   margin-bottom: 30px;
   margin-top: 29px;
   z-index: 1;
+  
 
   &::before {
     position: absolute;
@@ -27,6 +28,7 @@
   }
 }
 .reviews__text {
+  max-width: 157px;
   background: repeating-linear-gradient(
     transparent,
     transparent 29px,
@@ -38,6 +40,7 @@
   font-size: 12px;
   line-height: 255%;
   text-align: center;
+  margin: 0 auto;
 }
 .reviews__person {
   display: flex;
