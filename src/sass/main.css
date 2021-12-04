@@ -28,18 +28,18 @@ a {
   padding: 0 15px;
   /*outline: 1px solid red;*/
   margin: 0 auto;
-  max-width: 280px;
+  max-width: 310px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    max-width: 700px;
+    max-width: 730px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1050px;
+    max-width: 1080px;
   }
 }
 
@@ -60,6 +60,8 @@ a {
 /* COMPONENTS */
 /* LAYOUT */
 .reviews {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
+/*# sourceMappingURL=main.css.map */
+
 /*# sourceMappingURL=main.css.map */
