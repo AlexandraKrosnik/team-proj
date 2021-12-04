@@ -1,7 +1,12 @@
-.reviews {
+.reviews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews__comment {
   position: relative;
   background-color: $background-gray-color;
-  width: 280px;
+  max-width: 280px;
   height: 308px;
   padding: 43px 66px 26px 57px;
   margin: 0 auto;
