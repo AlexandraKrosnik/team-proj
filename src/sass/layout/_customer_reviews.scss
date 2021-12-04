@@ -1,5 +1,3 @@
-$background-gray-color: #fafafa;
-
 .reviews {
   position: relative;
   background-color: $background-gray-color;
@@ -7,6 +5,7 @@ $background-gray-color: #fafafa;
   height: 308px;
   padding: 43px 66px 26px 57px;
   margin: 0 auto;
+  margin-bottom: 30px;
 
   &::before {
     position: absolute;
@@ -19,12 +18,16 @@ $background-gray-color: #fafafa;
   }
 }
 .reviews__text {
+  background: repeating-linear-gradient(transparent, transparent 29px, $background-line-gray-color 10px, $background-line-gray-color 30px);
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 255%;
+  text-align: center;
 }
 .reviews__person {
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   font-size: 14px;
   line-height: 186%;
@@ -32,5 +35,8 @@ $background-gray-color: #fafafa;
 
   &::before {
     content: '. . .';
+    height: 4px;
+    color: $button-hover-color-red;
+    margin-bottom: 18px;
   }
 }
