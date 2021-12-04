@@ -22,6 +22,11 @@ ul {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   padding: 0 15px;
   /*outline: 1px solid red;*/
@@ -29,23 +34,14 @@ a {
   max-width: 310px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 700px;
+    max-width: 730px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1050px;
+    max-width: 1080px;
   }
 }
-.section {
-  width: 100vw;
-  //padding-top: 120px;
-  //padding-bottom: 95px;
 
-  /*@media screen and (min-width: 1600px) {
-    //padding-top: 127px;
-    //padding-bottom: 110px;
-  }*/
-}
 .visually-hidden {
   visibility: hidden;
   width: 0;

@@ -1,0 +1,73 @@
+@mixin picture__before($pic, $width) {
+  content: '';
+  background-image: url($pic);
+  width: $width;
+  position: absolute;
+  top: 0px;
+  height: 50px;
+}
+
+.advanteges {
+  background-color: $background-light-pink-color;
+  padding-top: 20px;
+  padding-bottom: 48px;
+}
+
+.advanteges__item {
+  padding-top: 66px;
+  position: relative;
+  //отступ между текстом и картинкой
+  &:not(:last-child) {
+    margin-bottom: 38px;
+  }
+  // картинки для екранов разной плотности
+  &:nth-child(1)::before {
+    @include picture__before('../images/advantages/milk.png', 33px);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &:nth-child(1)::before {
+      @include picture__before('../images/advantages/milk@2x.png', 33px);
+      background-size: contain;
+    }
+  }
+  &:nth-child(2)::before {
+    @include picture__before('../images/advantages/apples.png', 50px);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &:nth-child(2)::before {
+      @include picture__before('../images/advantages/apples@2x.png', 50px);
+      background-size: contain;
+    }
+  }
+  &:nth-child(3)::before {
+    @include picture__before('../images/advantages/lolipop.png', 44px);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &:nth-child(3)::before {
+      @include picture__before('../images/advantages/lolipop@2x.png', 44px);
+      background-size: contain;
+    }
+  }
+}
+
+.advantegers__number {
+  color: $primary-red-color;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  // position
+  margin-bottom: 34px;
+}
+
+.advantegers__text {
+  font-family: $primary-font;
+  color: $primary-text-color;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+}
