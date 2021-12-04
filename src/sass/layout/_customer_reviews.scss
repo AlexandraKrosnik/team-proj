@@ -1,4 +1,4 @@
-.reviews{
+.reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,12 @@
   }
 }
 .reviews__text {
-  background: repeating-linear-gradient(transparent, transparent 29px, $background-line-gray-color 10px, $background-line-gray-color 30px);
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    $background-line-gray-color 10px,
+    $background-line-gray-color 30px
+  );
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -39,13 +44,12 @@
   font-size: 14px;
   line-height: 186%;
   text-align: center;
-
-  &::before {
-    content: '. . .';
-    height: 4px;
-    color: $button-hover-color-red;
-    margin-bottom: 18px;
-  }
+}
+.reviews__points {
+  display: block;
+  border-color: $button-hover-color-red;
+  border-radius: 4px;
+  font-size: 0;
 }
 .swiper {
   width: 100%;
