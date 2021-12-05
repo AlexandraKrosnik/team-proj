@@ -13,16 +13,21 @@
   border-radius: 30%;
 }
 
+$mobile__picture__width: 200px;
+$mobile__picture__heigth: 200px;
+
 .modal {
   z-index: 5;
   position: fixed;
   width: 80vw;
-  height: 80vh;
+  height: 90vh;
   min-width: 320px;
-  top: 10vh;
+  top: 5vh;
   left: 10vw;
   opacity: 1;
   background-image: linear-gradient($primary-white-color 80%, $button-hover-color-red);
+  border: 5px solid $primary-red-color;
+  border-radius: 50px;
   // background-image: repeating-linear-gradient(
   //   -45deg,
   //   $primary-white-color,
@@ -30,41 +35,66 @@
   //   $button-hover-color-red 30px,
   //   $button-hover-color-red 35px
   // );
-
   // background-image: url('./../images/header_hero/desktop-ice-cream.png');
+}
 
-  border: 5px solid $primary-red-color;
-  border-radius: 50px;
+.modal__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .modal__item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   &:nth-child(1)::before {
     @media screen and (max-width: 480px) {
-      @include picture__modal__before('../images/products/mobile-ice-cream.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/mobile-ice-cream.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @include picture__modal__before('../images/products/mobile-ice-cream@2x.png', 200px, 200px);
+        @include picture__modal__before(
+          '../images/products/mobile-ice-cream@2x.png',
+          $mobile__picture__width,
+          $mobile__picture__heigth
+        );
         background-size: contain;
       }
     }
 
     @media screen and (min-width: 481px) {
-      @include picture__modal__before('../images/products/tablet-ice-cream.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/tablet-ice-cream.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @include picture__modal__before('../images/products/tablet-ice-cream@2x.png', 200px, 200px);
+        @include picture__modal__before(
+          '../images/products/tablet-ice-cream@2x.png',
+          $mobile__picture__width,
+          $mobile__picture__heigth
+        );
         background-size: contain;
       }
     }
 
     @media screen and (min-width: 769px) {
-      @include picture__modal__before('../images/products/desktop-ice-cream.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/desktop-ice-cream.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/desktop-ice-cream@2x.png',
-          200px,
-          200px
+          $mobile__picture__width,
+          $mobile__picture__heigth
         );
         background-size: contain;
       }
@@ -73,28 +103,52 @@
 
   &:nth-child(2)::before {
     @media screen and (max-width: 480px) {
-      @include picture__modal__before('../images/products/mobile-coffee.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/mobile-coffee.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @include picture__modal__before('../images/products/mobile-coffee@2x.png', 200px, 200px);
+        @include picture__modal__before(
+          '../images/products/mobile-coffee@2x.png',
+          $mobile__picture__width,
+          $mobile__picture__heigth
+        );
         background-size: contain;
       }
     }
 
     @media screen and (min-width: 481px) {
-      @include picture__modal__before('../images/products/tablet-coffee.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/tablet-coffee.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @include picture__modal__before('../images/products/tablet-coffee@2x.png', 200px, 200px);
+        @include picture__modal__before(
+          '../images/products/tablet-coffee@2x.png',
+          $mobile__picture__width,
+          $mobile__picture__heigth
+        );
         background-size: contain;
       }
     }
 
     @media screen and (min-width: 769px) {
-      @include picture__modal__before('../images/products/desktop-coffee.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/desktop-coffee.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @include picture__modal__before('../images/products/desktop-coffee@2x.png', 200px, 200px);
+        @include picture__modal__before(
+          '../images/products/desktop-coffee@2x.png',
+          $mobile__picture__width,
+          $mobile__picture__heigth
+        );
         background-size: contain;
       }
     }
@@ -105,31 +159,54 @@
       @include picture__modal__before('../images/products/mobile-milkshake.png', 200px, 200px);
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @include picture__modal__before('../images/products/mobile-milkshake@2x.png', 200px, 200px);
+        @include picture__modal__before(
+          '../images/products/mobile-milkshake@2x.png',
+          $mobile__picture__width,
+          $mobile__picture__heigth
+        );
         background-size: contain;
       }
     }
 
     @media screen and (min-width: 481px) {
-      @include picture__modal__before('../images/products/tablet-milkshake.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/tablet-milkshake.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        @include picture__modal__before('../images/products/tablet-milkshake@2x.png', 200px, 200px);
+        @include picture__modal__before(
+          '../images/products/tablet-milkshake@2x.png',
+          $mobile__picture__width,
+          $mobile__picture__heigth
+        );
         background-size: contain;
       }
     }
 
     @media screen and (min-width: 769px) {
-      @include picture__modal__before('../images/products/desktop-milkshake.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/desktop-milkshake.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/desktop-milkshake@2x.png',
-          200px,
-          200px
+          $mobile__picture__width,
+          $mobile__picture__heigth
         );
         background-size: contain;
       }
     }
   }
+}
+
+.modal__checkout {
+  display: block;
+  min-width: 250px;
+  min-height: 75px;
+  margin: 0 auto;
 }
