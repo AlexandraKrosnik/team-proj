@@ -13,8 +13,12 @@
   border-radius: 30%;
 }
 
-$mobile__picture__width: 200px;
-$mobile__picture__heigth: 200px;
+$mobile__picture__width: 175px;
+$mobile__picture__heigth: 150px;
+$tablet__picture__width: 200px;
+$tablet__picture__heigth: 300px;
+$desctop__picture__width: 200px;
+$desctop__picture__heigth: 300px;
 
 .modal {
   z-index: 5;
@@ -28,20 +32,20 @@ $mobile__picture__heigth: 200px;
   background-image: linear-gradient($primary-white-color 80%, $button-hover-color-red);
   border: 5px solid $primary-red-color;
   border-radius: 50px;
-  // background-image: repeating-linear-gradient(
-  //   -45deg,
-  //   $primary-white-color,
-  //   $primary-white-color 30px,
-  //   $button-hover-color-red 30px,
-  //   $button-hover-color-red 35px
-  // );
-  // background-image: url('./../images/header_hero/desktop-ice-cream.png');
+
+  @media screen and (max-width: 880px) {
+    width: 100vw;
+  }
 }
 
 .modal__list {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media screen and (min-width: 880px) {
+    flex-direction: row;
+    padding-top: 20vh;
+  }
 }
 
 .modal__item {
@@ -69,15 +73,15 @@ $mobile__picture__heigth: 200px;
     @media screen and (min-width: 481px) {
       @include picture__modal__before(
         '../images/products/tablet-ice-cream.png',
-        $mobile__picture__width,
-        $mobile__picture__heigth
+        $tablet__picture__width,
+        $tablet__picture__heigth
       );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/tablet-ice-cream@2x.png',
-          $mobile__picture__width,
-          $mobile__picture__heigth
+          $tablet__picture__width,
+          $tablet__picture__heigth
         );
         background-size: contain;
       }
@@ -86,15 +90,15 @@ $mobile__picture__heigth: 200px;
     @media screen and (min-width: 769px) {
       @include picture__modal__before(
         '../images/products/desktop-ice-cream.png',
-        $mobile__picture__width,
-        $mobile__picture__heigth
+        $desctop__picture__width,
+        $desctop__picture__heigth
       );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/desktop-ice-cream@2x.png',
-          $mobile__picture__width,
-          $mobile__picture__heigth
+          $desctop__picture__width,
+          $desctop__picture__heigth
         );
         background-size: contain;
       }
@@ -122,15 +126,15 @@ $mobile__picture__heigth: 200px;
     @media screen and (min-width: 481px) {
       @include picture__modal__before(
         '../images/products/tablet-coffee.png',
-        $mobile__picture__width,
-        $mobile__picture__heigth
+        $tablet__picture__width,
+        $tablet__picture__heigth
       );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/tablet-coffee@2x.png',
-          $mobile__picture__width,
-          $mobile__picture__heigth
+          $tablet__picture__width,
+          $tablet__picture__heigth
         );
         background-size: contain;
       }
@@ -139,15 +143,15 @@ $mobile__picture__heigth: 200px;
     @media screen and (min-width: 769px) {
       @include picture__modal__before(
         '../images/products/desktop-coffee.png',
-        $mobile__picture__width,
-        $mobile__picture__heigth
+        $desctop__picture__width,
+        $desctop__picture__heigth
       );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/desktop-coffee@2x.png',
-          $mobile__picture__width,
-          $mobile__picture__heigth
+          $desctop__picture__width,
+          $desctop__picture__heigth
         );
         background-size: contain;
       }
@@ -156,7 +160,11 @@ $mobile__picture__heigth: 200px;
 
   &:nth-child(3)::before {
     @media screen and (max-width: 480px) {
-      @include picture__modal__before('../images/products/mobile-milkshake.png', 200px, 200px);
+      @include picture__modal__before(
+        '../images/products/mobile-milkshake.png',
+        $mobile__picture__width,
+        $mobile__picture__heigth
+      );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
@@ -171,15 +179,15 @@ $mobile__picture__heigth: 200px;
     @media screen and (min-width: 481px) {
       @include picture__modal__before(
         '../images/products/tablet-milkshake.png',
-        $mobile__picture__width,
-        $mobile__picture__heigth
+        $tablet__picture__width,
+        $tablet__picture__heigth
       );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/tablet-milkshake@2x.png',
-          $mobile__picture__width,
-          $mobile__picture__heigth
+          $tablet__picture__width,
+          $tablet__picture__heigth
         );
         background-size: contain;
       }
@@ -188,15 +196,15 @@ $mobile__picture__heigth: 200px;
     @media screen and (min-width: 769px) {
       @include picture__modal__before(
         '../images/products/desktop-milkshake.png',
-        $mobile__picture__width,
-        $mobile__picture__heigth
+        $desctop__picture__width,
+        $desctop__picture__heigth
       );
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         @include picture__modal__before(
           '../images/products/desktop-milkshake@2x.png',
-          $mobile__picture__width,
-          $mobile__picture__heigth
+          $desctop__picture__width,
+          $desctop__picture__heigth
         );
         background-size: contain;
       }
@@ -204,9 +212,60 @@ $mobile__picture__heigth: 200px;
   }
 }
 
+.modal_product {
+  color: $primary-red-color;
+  font-family: $secondary-font;
+  font-size: 34px;
+  line-height: 1, 15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 .modal__checkout {
   display: block;
   min-width: 250px;
   min-height: 75px;
   margin: 0 auto;
+  background-color: $primary-white-color;
+  border-radius: 10px;
+
+  color: $decoration-pink-color;
+  font-family: $secondary-font;
+  font-size: 26px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.modal__input__number {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid $primary-red-color;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: $primary-red-color;
+  font-size: 14px;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+.modal__input {
+  background: #e5e8ee;
+  width: 50%;
+  height: 40px;
+  border: none;
+  padding: 8px;
+  text-align: center;
+}
+.input-number__minus,
+.input-number__plus {
+  font-size: 30px;
+  width: 25%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
 }
