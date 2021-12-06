@@ -18,6 +18,12 @@
   margin-top: 29px;
   z-index: 1;
 
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+    height: 164px;
+    background-color: $background-gray-color;
+  }
+
   &::before {
     position: absolute;
     top: 28px;
@@ -43,6 +49,13 @@
   line-height: 255%;
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 460px;
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+  }
 }
 .reviews__person {
   display: flex;
