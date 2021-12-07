@@ -10,7 +10,7 @@
                 <p class="modal_product">ice cream</p>
                 <div class="modal__input__number">
                     <div class="input-number__minus">-</div>
-                    <input class="modal__input" type="number">
+                    <input class="modal__input" type="number" min="0" max="50">
                     <div class="input-number__plus">+</div>
                 </div>
             </li>
@@ -19,7 +19,7 @@
                 <p class="modal_product">ice coffee</p>
                 <div class="modal__input__number">
                     <div class="input-number__minus">-</div>
-                    <input class="modal__input" type="number">
+                    <input class="modal__input" type="number" min="0" max="50">
                     <div class="input-number__plus">+</div>
                 </div>
             </li>
@@ -27,12 +27,18 @@
                 <p class="modal_product">milkshakes</p>
                 <div class="modal__input__number">
                     <div class="input-number__minus">-</div>
-                    <input class="modal__input" type="number">
+                    <input class="modal__input" type="number" min="0" max="50">
                     <div class="input-number__plus">+</div>
                 </div>
             </li>
         </ul>
-        <button class="modal__checkout" type="button">buy</button>
+        <div class="modal__contacts">
+            <p class="modal__name">Name</p>
+            <input type="text" class="modal__name__input">
+            <p class="modal__phone">Phone</p>
+            <input type="text" class="modal__phone__input modal__last__input">
+            <button class="modal__checkout " type="button">buy</button>
+        </div>
     </form>
 
 </div>
