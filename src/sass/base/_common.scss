@@ -33,11 +33,11 @@ img {
   margin: 0 auto;
   max-width: 320px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 730px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 1080px;
   }
 }
@@ -46,4 +46,8 @@ img {
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
