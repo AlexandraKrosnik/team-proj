@@ -31,7 +31,7 @@
     // padding-right: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     grid-template-columns: 2.1fr 2.1fr 2.1fr 2.1fr 2.1fr 2fr;
     grid-template-rows: 52px 52px 52px 44px 51px 42px 47px 47px 47px;
   }
@@ -69,12 +69,12 @@
 }
 
 .gallery__item {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 147px;
     height: 147px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     &:hover,
     &:focus {
       transform: scale(1.3);
@@ -124,7 +124,7 @@
     height: 198px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 294px;
     height: 294px;
   }
