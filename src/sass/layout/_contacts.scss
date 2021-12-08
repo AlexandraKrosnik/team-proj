@@ -266,9 +266,11 @@
 
 @media screen and (min-width: 1280px) {
     .section-container {
-      background-image: url(),
+      background-image: url(../images/contacts/desktop-petals.png),
       linear-gradient(to top, #fff5f6 82%, #ffffff 15%, #ffffff 15%);
-      
+       background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
       padding-top: 66px;
       padding-bottom: 86px;
    
