@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('[data-menu]');
   const openMenuBtn = document.querySelector('[data-menu-open]');
   const closeMenuBtn = document.querySelector('[data-menu-close]');
+  const closeMobBtn = document.querySelector('[data-mobMenu-close]');
   const closeMenu = document.querySelector('[data-close]');
   const closeMenuTwo = document.querySelector('[data-close-two]');
   const closeMenuThree = document.querySelector('[data-close-three]');
@@ -24,6 +25,7 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  closeMobBtn.addEventListener('click', toggleMenu);
   closeMenu.addEventListener('click', toggleMenu);
   closeMenuTwo.addEventListener('click', toggleMenu);
   closeMenuThree.addEventListener('click', toggleMenu);

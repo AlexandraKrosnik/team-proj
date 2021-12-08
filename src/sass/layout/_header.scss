@@ -24,12 +24,12 @@
     align-items: flex-end;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 730px;
   }
 
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
   }
 }
 
@@ -56,7 +56,7 @@
     margin-right: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -84,7 +84,7 @@
     stroke: $primary-red-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -100,7 +100,7 @@
   font-size: 16px;
   line-height: 1.313;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -118,7 +118,7 @@
 .header-menu__buttons {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     align-items: baseline;
   }
 }
@@ -128,7 +128,7 @@
 }
 
 .menu {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     opacity: 0;
     position: fixed;
     top: 0;
@@ -149,13 +149,13 @@
     max-width: 480px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 254px;
   }
 }
 
 .menu.is-open {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     opacity: 1;
     display: block;
 
@@ -163,7 +163,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .is-open,
   .navigation,
   .navigation_list {
@@ -176,7 +176,7 @@
   font-size: 14px;
   line-height: 1.29;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1279px) {
     border-top: 1px solid $border-color;
 
     &:last-child {
@@ -184,7 +184,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     align-self: center;
 
@@ -205,7 +205,7 @@
     color: $primary-red-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: inline-flex;
     padding: 12px 0;
   }
