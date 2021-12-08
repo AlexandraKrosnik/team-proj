@@ -18,7 +18,7 @@ $tablet__picture__heigth: 0px;
 $desctop__picture__width: 180px;
 $desctop__picture__heigth: 300px;
 
-.modal {
+.header__modal {
   z-index: 5;
   position: fixed;
   width: 80vw;
@@ -246,23 +246,7 @@ input[type='number']::-webkit-inner-spin-button {
     margin-bottom: 80px;
   }
 }
-.modal__button--close {
-  position: absolute;
-  right: -30px;
-  top: -30px;
-  line-height: 0;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: $primary-white-color;
-  outline: none;
-}
 .modal__svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   stroke: $secondary-text-color;
