@@ -48,7 +48,7 @@
   const refs = {
     openModalBtn: document.querySelector('[data-open]'),
     closeModalBtn: document.querySelector('[data-close]'),
-    modal: document.querySelector('[data-thank]'),
+    modal: document.querySelector('[data-modal-header]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
