@@ -1,4 +1,4 @@
-<section class="section hero-section" id=home>
+<section class="section hero-section" id="home">
   <div class="container hero-container">
     <picture>
       <source
@@ -19,7 +19,7 @@
       />
 
       <source
-        media="(max-width: 1199px)"
+        media="(max-width: 1279px)"
         srcset="
           images/header_hero/tablet-ice-cream.webp    1x,
           images/header_hero/tablet-ice-cream@2x.webp 2x
@@ -28,7 +28,7 @@
       />
 
       <source
-        media="(max-width: 1199px)"
+        media="(max-width: 1279px)"
         srcset="
           images/header_hero/tablet-ice-cream.png    1x,
           images/header_hero/tablet-ice-cream@2x.png 2x
@@ -37,7 +37,7 @@
       />
 
       <source
-        media="(min-width: 1200px)"
+        media="(min-width: 1280px)"
         srcset="
           images/header_hero/desktop-ice-cream.webp    1x,
           images/header_hero/desktop-ice-cream@2x.webp 2x
@@ -46,7 +46,7 @@
       />
 
       <source
-        media="(min-width: 1200px)"
+        media="(min-width: 1280px)"
         srcset="
           images/header_hero/desktop-ice-cream.png    1x,
           images/header_hero/desktop-ice-cream@2x.png 2x
@@ -60,14 +60,103 @@
         class="hero-section__image--hero"
       />
     </picture>
-    <div class="hero-section__content">
-      <h1 class="hero-section__title">
-        ice cream made with <span class="hero-section__title--red">passion</span>
-      </h1>
-      <div class="hero-section__buttons">        
-          <a class="button button--accent button__hero--red" href="#our-products">Products</a>             
-          <a  class="button button--white button__hero--white" href="#how-it’s-made">How it’s made?</a>         
+
+    <picture>
+      <source
+        media="(max-width: 1279px)"
+        srcset="images/header_hero/tablet-milk.webp 1x, images/header_hero/tablet-milk@2x.webp 2x"
+        type="image/webp"
+      />
+
+      <source
+        media="(max-width: 1279px)"
+        srcset="images/header_hero/tablet-milk.png 1x, images/header_hero/tablet-milk@2x.png 2x"
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="images/header_hero/desktop-milk.webp 1x, images/header_hero/desktop-milk@2x.webp 2x"
+        type="image/webp"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="images/header_hero/desktop-milk.png 1x, images/header_hero/desktop-milk@2x.png 2x"
+        type="image/png"
+      />
+
+      <img
+        src="images/header_hero/tablet-milk.png "
+        alt="A glass of milk"
+        class="hero-section__image--milk"
+      />
+    </picture>
+
+    <picture>
+      <source
+        media="(max-width: 1279px)"
+        srcset="images/header_hero/tablet-girl.webp 1x, images/header_hero/tablet-girl@2x.webp 2x"
+        type="image/webp"
+      />
+
+      <source
+        media="(max-width: 1279px)"
+        srcset="images/header_hero/tablet-girl.png 1x, images/header_hero/tablet-girl@2x.png 2x"
+        type="image/png"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="images/header_hero/desktop-girl.webp 1x, images/header_hero/desktop-girl@2x.webp 2x"
+        type="image/webp"
+      />
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="images/header_hero/desktop-girl.png 1x, images/header_hero/desktop-girl@2x.png 2x"
+        type="image/png"
+      />
+
+      <img
+        src="images/header_hero/tablet-girl.png "
+        alt="A girl with ice-cream"
+        class="hero-section__image--girl"
+      />
+    </picture>
+
+    <div class="hero-section__main-content">
+      <div class="hero-section__title-buttons">
+        <h1 class="hero-section__title">
+          ice cream made with <span class="hero-section__title--red">passion</span>
+        </h1>
+        <div class="hero-section__buttons">
+          <a class="button button--accent button__hero--red" href="#our-products">Products</a>
+          <a class="button button--white button__hero--white" href="#how-it’s-made"
+            >How it’s made?</a
+          >
+        </div>
       </div>
+      <ul class="hero-section__list">
+        <li class="hero-section__item">
+          <span class="hero-section__item--decoration">16</span>
+          <span class="hero-section__item--decoration-white">cafes</span>
+        </li>
+        <li class="hero-section__item">
+          <span class="hero-section__item--decoration">23</span> food trucks
+        </li>
+      </ul>
+    </div>
+    <div class="hero-section__secondary-content">
+      <p class="hero-section__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button type="button" class="button button--white hero-section__button--arrow">
+        <svg class="hero-section__button-icon">
+          <use href="images/icons/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
-</section>  
+</section>
