@@ -1,0 +1,103 @@
+.section-reviews {
+  padding-bottom: 43px;
+  padding-top: 80px;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews__comment {
+  position: relative;
+  background-color: $background-gray-color;
+  width: 100%;
+  padding-top: 43px;
+  height: 308px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 29px;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-image: url('../images/icons/quotes.svg');
+    z-index: -1;
+  }
+}
+.reviews__text {
+  max-width: 157px;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    $line-color 10px,
+    $line-color 30px
+  );
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  margin: 0 auto;
+}
+.reviews__person {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+}
+.reviews__points {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  background-color: $button-hover-color-red;
+  border-radius: 2px;
+  padding: 2px;
+  font-size: 0;
+  margin-bottom: 18px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $button-hover-color-red;
+    border-radius: 2px;
+    font-size: 0;
+    padding: 2px;
+    top: 0;
+    left: -14px;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: $button-hover-color-red;
+    border-radius: 2px;
+    font-size: 0;
+    padding: 2px;
+    top: 0;
+    left: 14px;
+  }
+}
+// ----------SWIPER-----------
+.swiper {
+  height: 550px;
+}
+.swiper .swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination {
+  display: block;
+  margin-top: 30px;
+}
+.swiper-pagination-bullet {
+  background-color: $button-hover-color-red;
+  width: 12px;
+  height: 12px;
+}

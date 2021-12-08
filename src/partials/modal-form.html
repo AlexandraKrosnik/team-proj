@@ -1,0 +1,73 @@
+<div class="modal is-hidden" data-modal>
+    <div class="modal__content">
+
+        <button type="button" class="modal__button--close" data-modal-close>
+            <svg class="modal__svg" width="11" height="11">
+                <use href="./images/icons/sprite.svg#close"></use>
+            </svg>
+        </button>
+
+        <p class="modal__title">Leave your contact details and we will get back to you as soon as possible.</p>
+        <form class="form">
+            <div class="form__group">
+                <div class="form__elements">
+                    <input name="name-feedback" type="text" id="name-modal" class="form__input" placeholder=" ">
+                    <label for="name-modal" class="form__label">Name</label>
+                    <svg class="form__svg" width="18" height="18">
+                        <use href="./images/icons/sprite.svg#icon-person"></use>
+                    </svg>
+                </div>
+
+                <div class="form__elements">
+                    <input name="phone-feedback" type="tel" id="phone-modal" class="form__input" placeholder=" ">
+                    <label for="phone-modal" class="form__label">Phone</label>
+                    <svg class="form__svg" width="18" height="18">
+                        <use href="./images/icons/sprite.svg#icon-phone"></use>
+                    </svg>
+                </div>
+
+                <div class="form__elements">
+                    <input name="email-feedback" type="email" id="email-modal" class="form__input" placeholder=" ">
+                    <label for="email-modal" class="form__label">Mail</label>
+                    <svg class="form__svg" width="18" height="18">
+                        <use href="./images/icons/sprite.svg#icon-email"></use>
+                    </svg>
+                </div>
+
+                <div class="form__elements">
+                    <textarea name="comments-feedback" id="comments-modal" rows="10"
+                        class="form__input form__input--textarea" placeholder=" "></textarea>
+                    <label for="comments-modal" class=" form__label form__label--textarea">Comment</label>
+                </div>
+
+            </div>
+            <div class="form__content--check">
+                <label for="check" class="form__checkbox--label">I agree with the
+                
+                    <input type="checkbox" id="check" class="form__checkbox--input">
+                    <span class="form__checkbox--icon"></span>
+                </label>
+                <a class="form__link" href=""> The newsletter and accept</a>
+            </div>
+            
+
+            <button type="button" class="button button--accent contacts-button form__button" data-modal-close >Send
+                <svg class="button__icon " width="20" height="20">
+                    <use href="./images/icons/sprite.svg#angle"></use>
+                </svg>
+            </button>
+
+            <div class="modal is-hidden" data-thank>
+                <div class="modal__content modal__location">
+                    <button type="button" class="modal__button--close" data-close>
+                        <svg class="modal__svg" width="11" height="11">
+                            <use href="./images/icons/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <p class="modal__title modal__title--location">Thank you! We will contact you later :)</p>                   
+            
+            </div>
+        </form>
+    </div>
+
+</div>

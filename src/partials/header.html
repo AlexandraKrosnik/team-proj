@@ -1,0 +1,65 @@
+
+  <div class="container">
+    <div class="header-menu">
+      <a href="#" class="logo">
+        <picture>
+          <source
+            srcset="images/header_hero/logo.webp 1x, images/header_hero/logo@2x.webp 2x"
+            type="image/webp"
+          />
+          <source
+            srcset="images/header_hero/logo.png 1x, images/header_hero/logo@2x.png 2x"
+            type="image/png"
+          />
+          <img src="images/header_hero/logo.png" alt="Site logo" width="199" />
+        </picture>
+      </a>
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu"
+        data-menu-open
+      >
+        <svg width="20" height="12">
+          <use href="images/icons/sprite.svg#burger"></use>
+        </svg>
+      </button>
+
+      <div class="menu" data-menu>
+        <div class="is-open" id="menu">
+          <button type="button" class="button button--white button--buy">
+            Buy now
+            <svg width="4.68" height="8" class="button__icon">
+              <use href="images/icons/sprite.svg#angle"></use>
+            </svg>
+          </button>
+          <button type="button" class="close-button" data-menu-close>
+            <svg width="14" height="14">
+              <use href="images/icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class="navigation_list">
+              <li class="navigation__item">
+                <a href="#home" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#about-us" class="navigation__link">About us</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#how-it’s-made" class="navigation__link">How it’s made?</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#our-products" class="navigation__link">Our products</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#contacts" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+

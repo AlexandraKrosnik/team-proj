@@ -1,0 +1,88 @@
+.video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  padding: 1.17vw;
+  border-radius: 1%;
+
+  background-color: $primary-white-color;
+  background-image: repeating-linear-gradient(
+    -30deg,
+    $primary-white-color,
+    $primary-white-color 2%,
+    $background-dark-pink-color 2%,
+    $background-dark-pink-color 4%
+  );
+
+  &--enabled {
+    cursor: pointer;
+  }
+}
+
+.video__link {
+  display: block;
+  height: 100%;
+}
+
+.video__media {
+  height: 100%;
+  width: 100%;
+
+  border: none;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 21.25vw;
+  height: 21.25vw;
+  padding: 0;
+
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+
+  line-height: 0;
+
+  color: $primary-white-color;
+  background-color: rgba(255, 184, 202, 0.9);
+  cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.42, 0, 0.58, 1),
+    background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+
+  .video--enabled & {
+    display: block;
+  }
+
+  .video:hover &,
+  &:focus {
+    border-color: $primary-white-color;
+    background-color: $button-hover-color-red;
+  }
+
+  @media screen and (min-width: 320px) {
+    width: 68px;
+    height: 68px;
+  }
+
+  &-icon {
+    fill: currentColor;
+    margin-left: 5px;
+
+    @media screen and (max-width: 319px) {
+      width: 10vw;
+      height: 10vw;
+    }
+  }
+}
