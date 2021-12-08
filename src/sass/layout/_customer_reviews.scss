@@ -13,13 +13,14 @@
   width: 100%;
   max-width: 280px;
   padding-top: 43px;
-  max-height: 308px;
+  height: 308px;
   margin: 30px auto 29px auto;
   z-index: 1;
   padding-bottom: 26px;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media screen and (min-width: 768px) {
+    height: 164px;
     padding-top: 47px;
     max-width: 620px;
     background-color: $background-gray-color-opacity;
@@ -27,6 +28,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    height: 200px;
     max-width: 926px;
     background-color: $background-gray-color;
   }
