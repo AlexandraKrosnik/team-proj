@@ -38,7 +38,8 @@ $desctop__picture__heigth: 300px;
   border-radius: 15px;
   padding: 20px 20px;
   margin: 0 auto;
-
+  overflow-y: hidden;
+  background-color: $backdrop-bg;
   @media screen and (min-width: 550px) and (max-width: 768px) {
     width: 450px;
   }
@@ -46,12 +47,34 @@ $desctop__picture__heigth: 300px;
     width: 650px;
   }
 }
+.modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal__button--header {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  outline: none;
+}
 .modal__form {
   background-color: $primary-white-color;
   border-radius: 25px;
   height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow-y: auto;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
