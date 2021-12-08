@@ -1,52 +1,60 @@
 <div class="modal is-hidden" data-modal-header>
-    <button type="button" class="modal__button--header" data-close>
-        <svg class="modal__svg" width="11" height="11">
-            <use href="./images/icons/sprite.svg#close"></use>
-        </svg>
-    </button>
-    
-        <form class="modal__form">
-            <ul class="modal__list">
-                <li class="modal__item">
-                    <p class="modal_product">ice cream</p>
-                    <div class="modal__input__number">
-                        <!-- <div class="input-number__minus">-</div> -->
-                        <button class="input__number__minus">-</button>
-                        <input class="modal__input" type="number" min="0" max="50">
-                        <button class="input__number__plus">+</button>
-                        <!-- <div class="input-number__plus">+</div> -->
-                    </div>
-                </li>
-                <li class="modal__item">
-        
-                    <p class="modal_product">ice coffee</p>
-                    <div class="modal__input__number">
-                        <button class="input__number__minus">-</button>
-                        <input class="modal__input" type="number" min="0" max="50">
-                        <button class="input__number__plus">+</button>
-                    </div>
-                </li>
-                <li class="modal__item">
-                    <p class="modal_product">milkshakes</p>
-                    <div class="modal__input__number">
-                        <button class="input__number__minus">-</button>
-                        <input class="modal__input" type="number" min="0" max="50">
-                        <button class="input__number__plus">+</button>
-                    </div>
-                </li>
-            </ul>
-            <div class="modal__contacts">
-                <p class="modal__name">Name</p>
-                <input type="text" class="modal__name__input" name="user-name" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+"
-                    title="Имя должно содержать минимум 2 символа кириллицы или латиницы" required>
-                <p class="modal__phone">Phone</p>
-                <input type="tel" class="modal__phone__input modal__last__input" name="user-phone" title="097-123-45-67"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-                <button class="modal__checkout " type="submit">buy</button>
-            </div>
-        </form>
-        
-   
-   
+  <button type="button" class="modal__button--header" data-close>
+    <svg class="modal__svg" width="11" height="11">
+      <use href="./images/icons/sprite.svg#close"></use>
+    </svg>
+  </button>
 
+  <form class="modal__form">
+    <ul class="modal__list">
+      <li class="modal__item">
+        <p class="modal_product">ice cream</p>
+        <div class="modal__input__number">
+          <!-- <div class="input-number__minus">-</div> -->
+          <button type="button" class="input__number__minus">-</button>
+          <input class="modal__input" type="number" min="0" max="50" />
+          <button type="button" class="input__number__plus">+</button>
+          <!-- <div class="input-number__plus">+</div> -->
+        </div>
+      </li>
+      <li class="modal__item">
+        <p class="modal_product">ice coffee</p>
+        <div class="modal__input__number">
+          <button type="button" class="input__number__minus">-</button>
+          <input class="modal__input" type="number" min="0" max="50" />
+          <button type="button" class="input__number__plus">+</button>
+        </div>
+      </li>
+      <li class="modal__item">
+        <p class="modal_product">milkshakes</p>
+        <div class="modal__input__number">
+          <button type="button" class="input__number__minus">-</button>
+          <input class="modal__input" type="number" min="0" max="50" />
+          <button type="button" class="input__number__plus">+</button>
+        </div>
+      </li>
+    </ul>
+    <div class="modal__contacts">
+      <p class="modal__name">Name</p>
+      <input
+        type="text"
+        class="modal__name__input"
+        name="user-name"
+        minlength="2"
+        pattern="[a-zA-Zа-яёА-ЯЁ]+"
+        title="Имя должно содержать минимум 2 символа кириллицы или латиницы"
+        required
+      />
+      <p class="modal__phone">Phone</p>
+      <input
+        type="tel"
+        class="modal__phone__input modal__last__input"
+        name="user-phone"
+        title="097-123-45-67"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        required
+      />
+      <button class="modal__checkout" type="submit">buy</button>
+    </div>
+  </form>
 </div>
