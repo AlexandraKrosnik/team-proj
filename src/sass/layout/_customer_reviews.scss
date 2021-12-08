@@ -11,22 +11,23 @@
   position: relative;
   background-color: $background-gray-color;
   width: 100%;
+  max-width: 280px;
   padding-top: 43px;
-  height: 308px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 29px;
+  max-height: 308px;
+  margin: 30px auto 29px auto;
   z-index: 1;
+  padding-bottom: 26px;
+  overflow-y: scroll;
 
   @media screen and (min-width: 768px) {
+    padding-top: 47px;
     max-width: 620px;
-    height: 164px;
     background-color: $background-gray-color-opacity;
+    padding-bottom: 28px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 926px;
-    height: 138px;
     background-color: $background-gray-color;
   }
 
@@ -45,7 +46,7 @@
       left: 40px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: 32px;
       left: 50px;
     }
@@ -59,10 +60,11 @@
     $line-color 10px,
     $line-color 30px
   );
+ 
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 255%;
+  line-height: 250%;
   text-align: center;
   margin: 0 auto;
 
@@ -73,7 +75,7 @@
     letter-spacing: 0.04em;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 750px;
     font-size: 16px;
     line-height: 186%;
@@ -122,20 +124,17 @@
 }
 // ----------SWIPER-----------
 .swiper {
-  height: 550px;
-
-  @media screen and (min-width: 768px) {
-    height: 400px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    height: 375px;
-  }
-}
-.section-reviews .swiper-pagination {
-  bottom: 0;
+  height: auto;
 }
 
+.swiper-pagination{
+  position: relative;
+  margin-top: 35px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+}
 .swiper-pagination-bullet {
   background-color: $button-hover-color-red;
   width: 12px;
