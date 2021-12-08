@@ -1,5 +1,8 @@
 $primary-font: DM Sans, sans-serif;
 $secondary-font: Titan One, cursive;
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: $primary-white-color;
