@@ -9,18 +9,15 @@
   const closeMenuFour = document.querySelector('[data-close-four]');
   const closeMenuFive = document.querySelector('[data-close-five]');
 
-
-
   const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
+    if (document.documentElement.scrollWidth < 1280) {
+      const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
 
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+      const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+    }
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -32,11 +29,9 @@
   closeMenuFour.addEventListener('click', toggleMenu);
   closeMenuFive.addEventListener('click', toggleMenu);
 
-
-
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
-  window.matchMedia('(min-width: 768px)').addEventListener('change', (e) => {
+  window.matchMedia('(min-width: 1280px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
