@@ -10,6 +10,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('overflow-hidden');
   }
 })();
 
@@ -25,6 +26,7 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('overflow-hidden');
   }
 })();
 
@@ -58,5 +60,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('overflow-hidden');
   }
 })();
