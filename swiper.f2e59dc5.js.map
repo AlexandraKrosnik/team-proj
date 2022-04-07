@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/swiper.js"],"names":["swiper","Swiper","pagination","el"],"mappings":";AAAA,MAAMA,EAAS,IAAIC,OAAO,UAAW,CAEjCC,WAAY,CACVC,GAAI","file":"swiper.f2e59dc5.js","sourceRoot":"../src","sourcesContent":["const swiper = new Swiper('.swiper', {\n    // If we need pagination\n    pagination: {\n      el: '.swiper-pagination',\n    },\n  });"]}
